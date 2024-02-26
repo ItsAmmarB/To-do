@@ -2,7 +2,7 @@ import { todos, renderTodoItems } from './todo.js';
 
 const timeElement = document.getElementById('time');
 setInterval(() => {
-    timeElement.innerText = new Date().toLocaleTimeString();
+    timeElement.innerText = new Date().toLocaleTimeString(hour: '2-digit');
 }, 500);
 
 const searchElement = document.getElementById('seach-bar');
