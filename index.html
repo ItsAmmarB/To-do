@@ -3,14 +3,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+        <script src="./src/js/index.js" type="module"></script>
         <link rel="stylesheet" href="./src/style/index.css" />
         <title>To-Do</title>
     </head>
-    <body>
+    <body class="--rubik-font">
         <header>
-            <h1>TO-DO</h1>
-            <input type="text" name="search" id="seach-bar" />
-            <h3>2/19 Tasks completed!</h3>
+            <div id="name-logo__header">
+                <img src="./src/images/icon.png" alt="Webpage Icon" />
+                <h2>TO-DO</h2>
+            </div>
+            <div id="controls__header">
+                <button>Add Task</button>
+                <input type="text" name="search" id="seach-bar" placeholder="SEACH KEYWORD" />
+                <h4 id="todos__count">2/19 Tasks completed!</h4>
+            </div>
+            <div id="time__header">
+                <h3 id="time">00:00:00 PM</h3>
+            </div>
         </header>
+
+        <main>
+            <div id="todo__container"></div>
+        </main>
     </body>
 </html>

@@ -1,0 +1,99 @@
+#todo__container {
+    padding-top: 9em;
+    display: grid;
+    place-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, 32em);
+
+    gap: 2em;
+    width: 100%;
+}
+
+.todo__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #7077a1;
+
+    border-radius: 1em;
+
+    width: 30em;
+
+    min-height: 15em;
+
+    padding: 2em;
+
+    transition: all 0.1s;
+}
+
+.todo__item h2 {
+    margin: 0;
+}
+
+.todo__item p {
+    padding: 1em;
+
+    border-radius: 2em;
+    padding-left: 1em;
+
+    transition: all 0.1s;
+}
+
+.todo__item form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.item__btn {
+    opacity: inherit;
+    height: 2.5em;
+    width: 6em;
+
+    border-radius: 1em;
+
+    border: unset;
+
+    background-color: #eed3d9;
+
+    transition: all 0.1s;
+}
+
+.item__btn:hover {
+    transform: scale(1.1);
+
+    background-color: #eed3d9;
+}
+
+.delete-btn:hover {
+    background-color: #f15757;
+}
+
+.edit-btn:hover {
+    background-color: #5a57f1;
+}
+
+.item__checkbox {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.completed {
+    opacity: 0.5;
+    /* background-color: #424769; */
+}
+
+@media screen and (max-width: 1300px) {
+    #todo__container {
+        padding-top: 19em;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    #todo__container {
+        padding-top: 21em;
+    }
+}
