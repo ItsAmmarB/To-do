@@ -1,0 +1,21 @@
+header {
+    background-color: #b5c0d0;
+
+    width: 70vw;
+    height: 20vh;
+
+    border-radius: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+header #seach-bar {
+    height: 3em;
+
+    width: 90%;
+
+    border-radius: 1em;
+}
